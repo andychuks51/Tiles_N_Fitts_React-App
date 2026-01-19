@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 export function AboutSection() {
   return <section id="about" className="py-24 md:py-32 px-6 md:px-12 bg-white">
       <div className="max-w-[1920px] mx-auto">
@@ -35,12 +36,12 @@ We have completed a few projects in lagos and are ready to create something sign
 The main task of our specialists — architects, designers is to create comfort that will become near and dear
               </p>
               
-              <a href="/about" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase hover:text-zinc-600 transition-colors group">
+              <Link to="/about" className="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase hover:text-zinc-600 transition-colors group">
                 <div className="w-12 h-12 border border-zinc-900 rounded-full flex items-center justify-center group-hover:bg-zinc-900 group-hover:text-white transition-all">
                   <span className="text-xl">&gt;</span>
                 </div>
                 <span>Learn More</span>
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

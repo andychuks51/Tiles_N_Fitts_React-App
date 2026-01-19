@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
+import { useLocation, Link } from 'react-router-dom';
 
 export function Header() {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
   
   // mobile menu state
   const [isOpen, setIsOpen] = useState(false);
@@ -34,25 +37,25 @@ export function Header() {
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="max-w-[1920px] mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-4">
+        <Link to="/" className="flex items-center gap-4">
           <img 
-            src="/TilesNfitt.png" 
+            src={`${import.meta.env.BASE_URL}TilesNfitt.png`} 
             alt="Tiles N Fitt Logo" 
             className="w-12 h-12 object-contain"
           />
           <div className="flex flex-col">
-            <a href="#" className={`text-2xl font-bold tracking-tight uppercase ${isScrolled ? 'text-zinc-900' : 'text-zinc-900'}`}>
+            <span className={`text-2xl font-bold tracking-tight uppercase ${isScrolled ? 'text-zinc-900' : 'text-zinc-900'}`}>
               TILES N FITT
-            </a>
+            </span>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item, i) => (
             <motion.a 
               key={item} 
-              href={`#${item.toLowerCase()}`} 
+              href={isHome ? `#${item.toLowerCase()}` : `${import.meta.env.BASE_URL}#${item.toLowerCase()}`} 
               className={`text-sm font-medium transition-colors ${isScrolled ? 'text-zinc-600 hover:text-zinc-900' : 'text-zinc-800 hover:text-zinc-950'}`} 
               initial={{ opacity: 0, y: -20 }} 
               animate={{ opacity: 1, y: 0 }} 
@@ -88,7 +91,10 @@ export function Header() {
           }}>
             {navItems.map((item) => (
               <div key={item} style={{ marginBottom: 10 }}>
-                <a href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)}>
+                <a 
+                  href={isHome ? `#${item.toLowerCase()}` : `${import.meta.env.BASE_URL}#${item.toLowerCase()}`} 
+                  onClick={() => setIsOpen(false)}
+                >
                   {item}
                 </a>
               </div>

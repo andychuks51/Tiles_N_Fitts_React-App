@@ -6,7 +6,7 @@ const projects = [{
   type: 'Residential',
   year: '2025',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  image: "/3_upscale01-2.png"
+  image: `${import.meta.env.BASE_URL}3_upscale01-2.png`
 }, {
   id: 2,
   title: 'GWARINPA ESTATE',
@@ -14,7 +14,7 @@ const projects = [{
   type: 'Residential',
   year: '2025',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  image: "Scene20-2.png"
+  image: `${import.meta.env.BASE_URL}Scene20-2.png`
 }, {
   id: 3,
   title: 'BTQ HOTEL',
@@ -22,7 +22,7 @@ const projects = [{
   type: 'Residential',
   year: '2025',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  image: "3DView13_style_transfer01-3.png"
+  image: `${import.meta.env.BASE_URL}3DView13_style_transfer01-3.png`
 }];
 export function ProjectsSection() {
   return <section id="projects" className="py-24 md:py-32 px-6 md:px-12 bg-white">

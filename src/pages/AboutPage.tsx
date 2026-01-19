@@ -10,7 +10,7 @@ export const AboutPage = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8 }}
-                    src="/TilesNfitt_upscayl_2x_upscayl-lite-4x.png" 
+                    src={`${import.meta.env.BASE_URL}TilesNfitt_upscayl_2x_upscayl-lite-4x.png`} 
                     alt="Tiles N Fitt Logo" 
                     className="w-48 md:w-64 object-contain mb-8"
                 />
@@ -82,7 +82,7 @@ export const AboutPage = () => {
                     {/* Diagram */}
                     <div className="w-full">
                         <img 
-                            src="/Tiles and fitt company profile-images-2.jpg" 
+                            src={`${import.meta.env.BASE_URL}Tiles and fitt company profile-images-2.jpg`} 
                             alt="What we do diagram" 
                             className="w-full h-auto rounded-lg"
                         />
@@ -91,7 +91,7 @@ export const AboutPage = () => {
                     {/* Stats */}
                     <div className="w-full">
                          <img 
-                            src="/Tiles and fitt company profile-images-3.jpg" 
+                            src={`${import.meta.env.BASE_URL}Tiles and fitt company profile-images-3.jpg`} 
                             alt="Progress tracker" 
                             className="w-full h-auto rounded-lg"
                         />
@@ -100,7 +100,7 @@ export const AboutPage = () => {
                     {/* Team */}
                     <div className="w-full">
                          <img 
-                            src="/Tiles and fitt company profile-images-4.jpg" 
+                            src={`${import.meta.env.BASE_URL}Tiles and fitt company profile-images-4.jpg`} 
                             alt="Our Family" 
                             className="w-full h-auto rounded-lg"
                         />
@@ -126,7 +126,7 @@ export const AboutPage = () => {
                                 transition={{ duration: 0.6 }}
                             >
                                 <img 
-                                    src={`/project-showcase-${num}.png`}
+                                    src={`${import.meta.env.BASE_URL}project-showcase-${num}.png`}
                                     alt={`Project Showcase ${num}`}
                                     className="w-full h-auto rounded-lg shadow-2xl"
                                 />
@@ -147,7 +147,7 @@ export const AboutPage = () => {
                     </motion.h2>
                     <div className="w-full">
                          <img 
-                            src="/project-structure.png" 
+                            src={`${import.meta.env.BASE_URL}project-structure.png`} 
                             alt="Project Structure Diagram" 
                             className="w-full h-auto rounded-lg"
                         />

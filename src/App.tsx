@@ -3,11 +3,13 @@ import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { AboutPage } from './pages/AboutPage';
+import { ScrollToTop } from './components/ScrollToTop';
 
 export function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-white font-sans selection:bg-zinc-900 selection:text-white">
+        <ScrollToTop />
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />

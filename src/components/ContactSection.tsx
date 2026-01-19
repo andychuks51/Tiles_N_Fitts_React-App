@@ -83,7 +83,7 @@ export function ContactSection() {
 
       {/* Right - Image */}
       <div className="w-full md:w-1/2 h-[50vh] md:h-auto relative bg-zinc-100">
-        <img src="/Scene7_5-2.png" alt="Contact visual" className="w-full h-full object-cover" />
+        <img src={`${import.meta.env.BASE_URL}Scene7_5-2.png`} alt="Contact visual" className="w-full h-full object-cover" />
       </div>
     </section>
   );
