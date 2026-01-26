@@ -19,7 +19,7 @@ export const projects = [
   {
     id: 2,
     title: 'CASA SANI',
-    location: 'Lagos, Nigeria',
+    location: 'Abuja, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -35,7 +35,7 @@ export const projects = [
   {
     id: 3,
     title: 'FHA BANK',
-    location: 'Lagos, Nigeria',
+    location: 'Ekiti, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -49,7 +49,7 @@ export const projects = [
   {
     id: 4,
     title: 'FLO BUNGALOW',
-    location: 'Lagos, Nigeria',
+    location: 'Ekiti, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -64,7 +64,7 @@ export const projects = [
   {
     id: 5,
     title: 'FLO RADIO',
-    location: 'Lagos, Nigeria',
+    location: 'Ekiti, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -78,7 +78,7 @@ export const projects = [
   {
     id: 6,
     title: 'FLO RESTUARANT',
-    location: 'Lagos, Nigeria',
+    location: 'Ekiti, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -110,7 +110,7 @@ export const projects = [
   {
     id: 8,
     title: 'GWARINPA ESTATE',
-    location: 'Lagos, Nigeria',
+    location: 'Abuja, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -183,13 +183,12 @@ export const projects = [
       `${import.meta.env.BASE_URL}Project Views/LYRA MANOR/LYRA MANOR - 3.png`,
       `${import.meta.env.BASE_URL}Project Views/LYRA MANOR/LYRA MANOR - 4.png`,
       `${import.meta.env.BASE_URL}Project Views/LYRA MANOR/LYRA MANOR - 5.png`,
-      `${import.meta.env.BASE_URL}Project Views/LYRA MANOR/LYRA MANOR - 6.png`,
     ]
   },
   {
     id: 13,
     title: 'MAMA CASS',
-    location: 'Lagos, Nigeria',
+    location: 'Abuja, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
@@ -291,6 +290,7 @@ export const projects = [
       `${import.meta.env.BASE_URL}Project Views/URBLE/URBLE - 3.png`,
       `${import.meta.env.BASE_URL}Project Views/URBLE/URBLE - 4.png`,
       `${import.meta.env.BASE_URL}Project Views/URBLE/URBLE - 5.png`,
+      `${import.meta.env.BASE_URL}Project Views/URBLE/URBLE - 6.png`,
     ]
   },
   {
@@ -326,7 +326,7 @@ export const projects = [
   {
     id: 22,
     title: 'YANGO HOTEL',
-    location: 'Lagos, Nigeria',
+    location: 'Abuja, Nigeria',
     type: 'Residential',
     year: '2025',
     description: 'A stunning architectural masterpiece designed to blend modern aesthetics with functional living spaces.',
